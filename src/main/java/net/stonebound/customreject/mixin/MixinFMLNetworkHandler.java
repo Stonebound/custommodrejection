@@ -10,8 +10,9 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 public class MixinFMLNetworkHandler {
     @ModifyArg(method = "checkModList(Ljava/util/Map;Lnet/minecraftforge/fml/relauncher/Side;)Ljava/lang/String;",
             at = @At(value = "INVOKE", target = "Ljava/lang/String;format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"))
-    private static String customRejectionMessage(String test) {
-        return "Server Mod Mismatch:\n This server is running " + FMLCommonHandler.instance().getMinecraftServerInstance().getMOTD();
+    private static String customRejectionMessage(String rejectString) {
+        return String.format("This server is running " + FMLCommonHandler.instance().getMinecraftServerInstance().getMOTD()
+                        +"\n%s", rejectString);
     }
 
 }
