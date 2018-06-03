@@ -1,0 +1,13 @@
+[
+    {
+        "modid": "customreject",
+        "name": "Custom Mod Rejection Messsage",
+        "description": "Allows you to customize the Mod Rejection Messsage",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "https://stonebound.net",
+        "authorList": [
+            "phit"
+        ]
+    }
+]

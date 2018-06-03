@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "minVersion": "0.7.4",
+    "package": "net.stonebound.customreject.mixin",
+    "target": "@env(DEFAULT)",
+    "compatibilityLevel": "JAVA_8",
+    "refmap": "mixins.customreject.refmap.json",
+    "mixins": [
+        "MixinFMLNetworkHandler"
+    ]
+}
