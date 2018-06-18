@@ -59,8 +59,11 @@ sourceSets {
 jar {
     manifest {
         attributes(
+                'FMLCorePluginContainsFMLMod': 'true',
                 'MixinConfigs': 'mixins.customreject.json',
-                'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker'
+                'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
+                "FMLCorePlugin": "net.stonebound.customreject.CustomReject",
+                "ForceLoadAsMod": "true"
         )
     }
 }
