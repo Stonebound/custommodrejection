@@ -1,6 +1,6 @@
 [
     {
-        "modid": "customreject",
+        "modid": "creject",
         "name": "Custom Mod Rejection Messsage",
         "description": "Allows you to customize the Mod Rejection Messsage",
         "version": "${version}",
