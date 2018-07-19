@@ -21,7 +21,7 @@ apply plugin: 'maven'
 apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: "org.spongepowered.mixin"
 
-version = modVersion
+version = modVersion + "-" + forgeVersion
 group = modGroup
 archivesBaseName = modBaseName
 
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    compile('org.spongepowered:mixin:0.7.4-SNAPSHOT') {
+    compile('org.spongepowered:mixin:0.7.10-SNAPSHOT') {
         exclude module: 'launchwrapper'
     }
 }
@@ -62,7 +62,6 @@ jar {
                 'FMLCorePluginContainsFMLMod': 'true',
                 'MixinConfigs': 'mixins.customreject.json',
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
-                "FMLCorePlugin": "net.stonebound.customreject.CustomReject",
                 "ForceLoadAsMod": "true"
         )
     }
