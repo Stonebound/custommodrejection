@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = CustomReject.MODID, name = "Custom Mod Rejection", version = "1.1.0", acceptableRemoteVersions = "*")
+@Mod(modid = CustomReject.MODID, name = "Custom Mod Rejection", version = "1.1.2", acceptableRemoteVersions = "*")
 public class CustomReject {
     public static final String MODID = "creject";
     private static Logger logger;
