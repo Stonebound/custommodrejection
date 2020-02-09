@@ -1,6 +1,5 @@
 package net.stonebound.customreject.mixin;
 
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
 import net.stonebound.customreject.CustomReject;
 import org.spongepowered.asm.mixin.Mixin;

@@ -5,6 +5,7 @@
         "description": "Allows you to customize the Mod Rejection Messsage",
         "version": "${version}",
         "mcversion": "${mcversion}",
+        "dependencies": [],
         "url": "https://stonebound.net",
         "authorList": [
             "phit"
