@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = CustomReject.MODID, name = "Custom Mod Rejection", version = "1.1.2", acceptableRemoteVersions = "*")
+@Mod(modid = CustomReject.MODID, name = "Custom Mod Rejection", version = "1.2.0", acceptableRemoteVersions = "*")
 public class CustomReject {
     public static final String MODID = "creject";
     private static Logger logger;
@@ -36,5 +36,10 @@ public class CustomReject {
 
         @Comment("Include default mismatch message [default: true]")
         public static boolean includeMismatchedMods = true;
+
+        @Comment("Rejection Message if no FML was found on the client [default: \"This server has mods that require FML/Forge to be installed on "
+                + "the client. Contact your server admin for more details.\"]")
+        public static String rejectionMessageNoFML = "This server has mods that require FML/Forge to be installed on the client. Contact your server "
+                + "admin for more details.";
     }
 }

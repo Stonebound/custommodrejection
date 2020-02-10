@@ -6,6 +6,7 @@
     "compatibilityLevel": "JAVA_8",
     "refmap": "mixins.customreject.refmap.json",
     "mixins": [
-        "MixinFMLNetworkHandler"
+        "MixinFMLNetworkHandler",
+        "MixinFMLCommonHandler"
     ]
 }
